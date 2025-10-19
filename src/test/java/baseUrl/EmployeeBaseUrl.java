@@ -1,0 +1,18 @@
+package baseUrl;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
+import org.testng.annotations.BeforeMethod;
+
+public class EmployeeBaseUrl {
+
+    protected RequestSpecification spec;
+
+    @BeforeMethod
+    public void setSpec(){
+        spec = new RequestSpecBuilder()
+                .setBaseUri("https://dummy.restapiexample.com")
+                .build();
+    }
+
+}
