@@ -1,6 +1,6 @@
 package day03;
 
-import baseUrl.PetStoreUserBaseUrl;
+import baseUrl.PetStoreBaseUrl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import pojos.petStore;
@@ -11,7 +11,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
-public class T02_petStore extends PetStoreUserBaseUrl {
+public class T02_petStore extends PetStoreBaseUrl {
 /*
     Task: Write an automation test that creates a 'user' using the
     Petstore API at https://petstore.swagger.io/
