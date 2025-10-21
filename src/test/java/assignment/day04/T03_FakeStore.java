@@ -46,10 +46,8 @@ Assert that the returned cart contains the expected data
         objectNode.put("date", "2025-10-21");
 
         ObjectNode products=(ObjectNode) objectNode.get("products").get(0);
-        products.put("id",2);
         products.put("title","science fiction book");
         products.put("price",14.99);
-        products.put("description","a novel book");
         products.put("productId",1);
         products.put("quantity",3);
         System.out.println("payload = " + payload);
