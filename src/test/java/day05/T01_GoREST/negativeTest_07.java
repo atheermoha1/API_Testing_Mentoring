@@ -1,24 +1,25 @@
 package day05.T01_GoREST;
 
 import baseUrl.goRestBaseUrl;
-import com.fasterxml.jackson.databind.JsonNode;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static day05.T01_GoREST.createUser_02.userId;
 import static io.restassured.RestAssured.given;
-import static utilities.ObjectMapperUtils.getJsonNode;
+import static org.hamcrest.Matchers.equalTo;
 
-public class deleteUser_06 extends goRestBaseUrl {
+public class negativeTest_07 extends goRestBaseUrl {
+
 
     @Test
-    void deleteUser(){
+    void negativeUser(){
 
         //send request
-        Response response = given(spec).delete("/users/"+userId);
+        Response response = given(spec).delete("/users/"+1234);
         response.prettyPrint();
 
-        response.then().statusCode(204);
+        //do assertion
+        response.then().statusCode(404).body("message",equalTo("Resource not found"));
 
 
 
