@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/ASUS/IdeaProjects/API_Testing_Mentoring/src/test/java/day05/T01_GoREST">
+        <classes>
+            <class name="day05.T01_GoREST.createUser_02">
+            </class>
+            <class name="day05.T01_GoREST.getAllUsers_01">
+            </class>
+            <class name="day05.T01_GoREST.getUser_03">
+            </class>
+        </classes>
+    </test>
+</suite>
