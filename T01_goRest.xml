@@ -10,6 +10,10 @@
             </class>
             <class name="day05.T01_GoREST.getUser_03">
             </class>
+            <class name="day05.T01_GoREST.updateUser_04">
+            </class>
+            <class name="day05.T01_GoREST.partialUpdateUser_05">
+            </class>
         </classes>
     </test>
 </suite>
